@@ -1,0 +1,54 @@
+================================================================================
+PHARMACEUTICAL MANUFACTURING INCIDENT & DEVIATION REPORT
+API SYNTHESIS & REFINING DIVISION - FACILITY PLANT 1
+================================================================================
+
+Report Number:      DEV-2026-0894
+Date of Occurrence: 2026-09-24
+Reporting Department: Production Operations / Bulk Active Pharmaceutical Ingredients
+Reporting Person:   Alex Mercer (Senior Production Lead Operator)
+Facility / Site:    API Synthesis Facility - Plant 1
+
+--------------------------------------------------------------------------------
+1. PRODUCT & BATCH IDENTIFICATION
+--------------------------------------------------------------------------------
+Product / Material Name:    Paracetamol API (Acetaminophen BP/USP Grade)
+Material Code:              MAT-PAR-042
+Batch / Lot Number:         API-260924
+Batch Size / Affected Qty:  500 kg (Drum Containers 01 through 20)
+Current Batch Stage:        Fluidized Bed Drying (Stage IV of API Synthesis)
+
+--------------------------------------------------------------------------------
+2. DEVIATION CLASSIFICATION & SOURCE
+--------------------------------------------------------------------------------
+Source of Detection:        Production Operator Visual Inspection & SCADA Alert
+Equipment / Unit ID:        FBD-02 (Fluidized Bed Dryer Unit 2, Cleanroom 104)
+Critical Process Parameter: Drying Chamber Product Temperature
+
+--------------------------------------------------------------------------------
+3. INCIDENT DESCRIPTION & SEQUENCE OF EVENTS
+--------------------------------------------------------------------------------
+During the routine fluidized bed drying cycle of Paracetamol API batch API-260924,
+the approved validated recipe operating temperature range is 70°C to 75°C.
+
+At approximately 14:22 hrs, drying temperature sensor TE-204 recorded an upward
+temperature excursion reaching 82°C. The temperature remained out of validated
+operating parameters (between 78°C and 82°C) for a duration of approximately 18 minutes.
+
+The production operator immediately observed the audible high-temperature alarm on
+the SCADA control console and initiated emergency cool air bypass flow to return the chamber
+temperature back within the validated 70°C - 75°C range.
+
+Preliminary root cause appears to be a transient proportional steam control valve
+sticking issue on heat exchanger HX-102.
+
+--------------------------------------------------------------------------------
+4. IMMEDIATE CONTAINMENT ACTIONS TAKEN
+--------------------------------------------------------------------------------
+1. Heating cycle manually halted and diverted to ambient cooling purge.
+2. Batch API-260924 (500 kg) immediately placed on PHYSICAL and SYSTEM QUARANTINE HOLD.
+3. Yellow Quarantine tags affixed to FBD-02 product discharge IBCs.
+4. QA On-call deviation notification issued within 1 hour per SOP-QMS-402.
+5. In-process composite sampling scheduled for thermal degradation assay and chromatographic
+   purity profiling (p-aminophenol and related substance 4-nitrophenol analysis).
+================================================================================

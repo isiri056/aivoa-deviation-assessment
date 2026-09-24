@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1220 >>
+stream
+BT
+/F1 10 Tf
+50 750 Td
+14 TL
+(AIVOA PHARMACEUTICALS - DEVIATION INCIDENT REPORT) '
+(Report ID: DEV-2026-0894 | Facility: API Synthesis Facility - Plant 1) '
+(Date of Occurrence: 2026-09-24 | Source: Production Operator) '
+(--------------------------------------------------------------------------------) '
+(PRODUCT AND BATCH INFORMATION:) '
+(Product: Paracetamol API \(Acetaminophen BP/USP Grade\)) '
+(Batch / Lot Number: API-260924) '
+(Affected Quantity: 500 kg) '
+(Stage: Fluidized Bed Drying \(Cleanroom Suite 104\)) '
+() '
+(INCIDENT DESCRIPTION:) '
+(During the manufacturing and drying of Paracetamol API batch API-260924,) '
+(the drying temperature exceeded the approved validated range of 70-75 C) '
+(and reached 82 C for approximately 18 minutes.) '
+(The event was detected by the production operator following a SCADA console alert.) '
+(The operator initiated emergency cooling bypass to return temperature to 72 C.) '
+() '
+(IMMEDIATE ACTIONS AND CONTAINMENT:) '
+(The affected 500 kg batch has been placed on physical and electronic QA quarantine) '
+(hold pending formal investigation. Yellow quarantine labels applied to IBC-401.) '
+(Composite sampling requested for HPLC degradation impurity profiling.) '
+ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001513 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1583
+%%EOF
