@@ -5,7 +5,7 @@
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Orchestration-FF6F00?logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
-[![Groq](https://img.shields.io/badge/Groq-Llama--3.3--70b--versatile-F55036)](https://groq.com)
+[![Groq](https://img.shields.io/badge/Groq-gpt--oss--120b-F55036)](https://groq.com)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev)
 [![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-State-764ABC?logo=redux&logoColor=white)](https://redux-toolkit.js.org)
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0+-D71F00?logo=sqlalchemy&logoColor=white)](https://www.sqlalchemy.org)
@@ -18,7 +18,7 @@ The **AI-Powered Deviation Intake Module** is a specialized quality assurance sy
 
 This module fundamentally reverses that burden:
 - **Zero initial manual form-filling**: The user provides unstructured input (natural-language incident logs, operator shift notes, or uploaded PDF/TXT reports) to the **AI Deviation Assistant**.
-- **Autonomous structured extraction**: LangGraph coordinates Groq LLMs (`llama-3.3-70b-versatile`) to extract 10 standardized GxP fields.
+- **Autonomous structured extraction**: LangGraph coordinates Groq LLMs (`openai/gpt-oss-120b`) to extract 10 standardized GxP fields.
 - **Automated GxP Quality Risk Assessment**: Automatically determines initial **Impact** (High, Medium, Low) and **Severity** (Critical, Major, Minor), accompanied by technical justification and recommended containment next steps.
 - **Conversational Delta-Editing**: The user can iteratively modify fields via natural language (e.g. *"Actually, the batch number is API-260925 and affected quantity is 50 kg"*). The system modifies **only** the target fields, strictly preserving all untouched data.
 - **Human-in-the-loop review**: The form remains fully interactive and editable before persisting to the database.
@@ -32,9 +32,9 @@ This module fundamentally reverses that burden:
 | **Frontend** | React 18, Redux Toolkit, Axios, Tailwind CSS, Lucide Icons | Responsive 2-column QMS layout, atomic state updates, delta-merging, visual AI badges |
 | **Backend API** | Python 3.9+, FastAPI, Pydantic v2, Uvicorn | High-performance asynchronous REST endpoints with strict type validation |
 | **AI Orchestration** | LangGraph, LangChain Core, LangChain Groq | Multi-step agent graph with intent routing, structured Pydantic outputs, and risk evaluation |
-| **LLM Inference** | Groq API (`llama-3.3-70b-versatile`) | Ultra-fast token generation with strict JSON schema compliance |
+| **LLM Inference** | Groq API (`openai/gpt-oss-120b`) | Fast LLM inference for structured extraction, conversational editing, and GxP risk assessment |
 | **Database** | SQLAlchemy 2.0 (SQLite dev fallback / PostgreSQL ready) | Environment-configured persistence with audit timestamps |
-| **Document Parser** | `pypdf`, `python-multipart` | Pure-Python, lightweight PDF stream parsing and TXT decoding with 10MB limit |
+| **Document Parser** | `pypdf`, `python-multipart` | Lightweight PDF stream parsing and TXT decoding with a 10MB upload limit |
 
 ---
 
@@ -138,7 +138,7 @@ Edit `backend/.env`:
 ```env
 # Get a free API key at https://console.groq.com
 GROQ_API_KEY=your_groq_api_key_here
-GROQ_MODEL=llama-3.3-70b-versatile
+GROQ_MODEL=openai/gpt-oss-120b
 
 # Database (defaults to zero-config SQLite)
 DATABASE_URL=sqlite:///./deviations.db
